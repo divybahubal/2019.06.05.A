@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h2>My First JavaScript</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-
+    <script>
+    var a=6;
+    function test(){
+        var a=7;
+        function again(){
+            var a=8;
+            alert(a);
+        }
+        again();
+        alert(a);
+    }
+    test();
+    alert(a);
+</script>
 </body>
 </html> 
